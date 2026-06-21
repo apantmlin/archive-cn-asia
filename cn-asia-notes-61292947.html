@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯直播 · 简明观赛指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f5f0;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2e2b28;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page {
+            max-width: 760px;
+            width: 100%;
+            background: #fcfcf9;
+            padding: 2.5rem 2rem 3rem;
+            border-radius: 32px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.02);
+            transition: box-shadow 0.2s ease;
+        }
+
+        @media (min-width: 640px) {
+            .page {
+                padding: 3.5rem 3.2rem 4rem;
+            }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #1e1b18;
+            border-left: 4px solid #d9c6a6;
+            padding-left: 1.2rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.25;
+        }
+
+        .subhead {
+            font-size: 1.05rem;
+            color: #6b625a;
+            margin-bottom: 1.8rem;
+            padding-left: 1.6rem;
+            font-style: italic;
+        }
+
+        .intro {
+            font-size: 1.02rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ede7dd;
+            padding-bottom: 1.5rem;
+        }
+
+        .intro p {
+            margin-bottom: 0.8rem;
+        }
+
+        .intro strong {
+            font-weight: 600;
+            color: #3d352e;
+        }
+
+        .text-block {
+            margin-bottom: 2rem;
+        }
+
+        .text-block p {
+            margin-bottom: 1.2rem;
+        }
+
+        .pull-quote {
+            background: #f4efe8;
+            border-left: 4px solid #b7a68e;
+            padding: 1.2rem 1.5rem;
+            margin: 1.8rem 0 2.2rem;
+            border-radius: 0 12px 12px 0;
+            font-size: 1.05rem;
+            color: #3f3831;
+            position: relative;
+        }
+
+        .pull-quote::before {
+            content: "💡";
+            font-size: 1.4rem;
+            margin-right: 0.5rem;
+            opacity: 0.7;
+        }
+
+        .tip-box {
+            background: #f0ebe2;
+            padding: 1rem 1.4rem;
+            border-radius: 18px;
+            margin: 1.6rem 0 2rem;
+            display: flex;
+            gap: 0.6rem;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .tip-box .icon {
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
+
+        .tip-box .content {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .tip-box .content p {
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-mini {
+            background: #ffffff;
+            border: 1px solid #e5ddcf;
+            border-radius: 20px;
+            padding: 1.2rem 1.4rem;
+            margin: 2rem 0 1.6rem;
+        }
+
+        .faq-mini h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.6rem;
+            color: #3b332c;
+        }
+
+        .faq-mini dt {
+            font-weight: 500;
+            margin-top: 0.8rem;
+            color: #4d423a;
+        }
+
+        .faq-mini dd {
+            margin-top: 0.2rem;
+            padding-left: 0.2rem;
+            color: #5d534a;
+        }
+
+        .visit-note {
+            background: #e8e2d7;
+            padding: 1rem 1.4rem;
+            border-radius: 24px;
+            margin-top: 2.2rem;
+            font-size: 1.02rem;
+            text-align: center;
+            color: #2b2621;
+        }
+
+        .visit-note a {
+            color: #4d3e2e;
+            text-decoration: underline wavy #b7a68e 1px;
+            text-underline-offset: 4px;
+            font-weight: 500;
+            transition: color 0.15s;
+        }
+
+        .visit-note a:hover {
+            color: #7a6246;
+            text-decoration-color: #7a6246;
+        }
+
+        .footer-meta {
+            margin-top: 2.8rem;
+            font-size: 0.85rem;
+            color: #8a7f73;
+            text-align: center;
+            border-top: 1px solid #eee8dd;
+            padding-top: 1.6rem;
+            letter-spacing: 0.02em;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7rem;
+                padding-left: 1rem;
+            }
+            .page {
+                padding: 1.6rem 1.2rem;
+            }
+            .pull-quote {
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>世界杯直播 · 简明观赛指南</h1>
+    <div class="subhead">从赛程提醒到流畅观看，一篇说清</div>
+
+    <div class="intro">
+        <p>四年一次的足球盛事，屏幕前的热情从不缺席。无论你是资深球迷，还是偶尔陪家人看一场，提前了解怎么看、从哪看，都能让观赛体验更踏实、更自在。</p>
+        <p>这篇文章没有花哨的营销，只有一份<strong>实用向的观赛备忘</strong>——帮你省去临时找入口的慌乱，把注意力留在比赛本身。</p>
+    </div>
+
+    <div class="text-block">
+        <p>先说最朴素的经验：比赛日前后，网络拥堵、链接入口变更、地区限制……这些偶尔会冒出来的小麻烦，其实都有简单的应对方法。保持一个稳定的访问习惯，比什么都重要。</p>
+        <p>很多人习惯赛前十分钟才匆忙搜索，结果被广告页或过期信息耽误。我的建议是——提前一天，把常用的观赛页面存好、试开一次。尤其是关键场次，比如淘汰赛、半决赛，别让这些琐事干扰了看球的心情。</p>
+        <p>身边朋友问得最多的问题是：“到底哪个链接最可靠？” 说实话，没有永远不变的答案，但一个朴素的判断标准是：<strong>页面加载干净、没有弹窗、域名稳定</strong>——这类平台通常更值得信赖。</p>
+    </div>
+
+    <div class="pull-quote">
+        提醒：不少第三方网站会临时更换路径，建议把主站存入浏览器书签，而不是依赖搜索引擎的实时结果。
+    </div>
+
+    <div class="text-block">
+        <p>如果你正在寻找一个持续可用的观赛入口，可以考虑将以下地址作为起点：<br> 
+        <span style="background:#f4efe8; padding:0.15rem 0.5rem; border-radius:6px; font-family:monospace; font-size:0.95rem;">https://cn-asia-worldcup.com</span></p>
+        <p>这个站点保持了简洁的导航结构，没有过度商业化。你可以先打开试试，看看加载速度和界面是否合眼缘。观赛这件事，有时候“顺手”比“花哨”重要得多。</p>
+    </div>
+
+    <div class="tip-box">
+        <span class="icon">📌</span>
+        <div class="content">
+            <p><strong>实用小贴士</strong></p>
+            <p>• 建议使用 Chrome / Edge 浏览器，兼容性更好<br>
+            • 如果遇到地区提示，可尝试切换网络环境（比如手机热点）<br>
+            • 比赛前 20 分钟打开页面，避开高峰拥挤</p>
+        </div>
+    </div>
+
+    <div class="faq-mini">
+        <h3>⚡ 几个常被问到的点</h3>
+        <dl>
+            <dt>Q：需要注册或付费吗？</dt>
+            <dd>A：直播入口本身是免费开放的，但部分平台可能会提供增值服务（如回放、多语解说），按需选择即可。</dd>
+            <dt>Q：手机看和电脑看有区别吗？</dt>
+            <dd>A：手机更方便，但电脑端大屏沉浸感更强。推荐用平板或电脑观看重要场次，手机用作临时应急。</dd>
+            <dt>Q：如何确认直播时间？</dt>
+            <dd>A：赛程表建议以官方发布为准，或在该页面内查看置顶公告。</dd>
+        </dl>
+    </div>
+
+    <div class="visit-note">
+        🏟️ 如果还没决定从哪开始，可以直接试试 
+        <a href="https://cn-asia-worldcup.com">世界杯直播</a> 
+        —— 保持页面简洁、更新稳定，也是许多球迷长期使用的原因之一。
+    </div>
+
+    <div class="footer-meta">
+        — 观赛愉快 · 保持专注 —
+    </div>
+</div>
+</body>
+</html>
